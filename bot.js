@@ -300,12 +300,12 @@ client.on('guildMemberAdd', member=> {
 	
 client.on('message', msg => {
   if (msg.content === 'ترحيب') {
-    msg.reply('**Welcome To __ # - Versé Server :rose: :heart: __ **');
+    msg.channel.send('**Welcome To __ # - Versé Server :rose: :heart: __ **');
   }
 });
 client.on('message', msg => {
   if (msg.content === 'ولكم') {
-    msg.reply('**Welcome To <@&515429561626787851> :black_heart: :dove: **');
+    msg.channel.send('**Welcome To <@&515429561626787851> :black_heart: :dove: **');
   }
 });
  
