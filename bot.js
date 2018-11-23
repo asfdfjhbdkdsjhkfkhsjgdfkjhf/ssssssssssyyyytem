@@ -107,7 +107,6 @@ client.on('message', function(msg) {
       .addField(':microphone:**__ رومات الصوت__**',`[** __${msg.guild.channels.filter(m => m.type === 'voice').size}__ **]`,true)
       .addField(':crown:**__ الأونـر__**',`**${msg.guild.owner}**`,true)
       .addField(':id:**__ ايدي السيرفر__**',`**${msg.guild.id}**`,true)
-      .addField(':date:**__ تم عمل السيرفر في__**',msg.guild.createdAt.toLocaleString())
       msg.channel.send({embed:embed});
     }
   });
@@ -310,4 +309,4 @@ client.on('message', msg => {
   }
 });
  
-client.login('Token');
+client.login(process.env.BOT_TOKEN);
