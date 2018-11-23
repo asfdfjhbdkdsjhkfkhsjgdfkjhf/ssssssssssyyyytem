@@ -288,7 +288,7 @@ client.on("message", message => {
   }
 });
 client.on("guildMemberAdd", member => {
-        if(member.guild.id === "513019757746847754") {  // ايدي السيرفر
+        if(member.guild.id === "514339334644695060") {  // ايدي السيرفر
   const channel = member.guild.channels.find('id', '514808324571529346'); //ايدي الروم
 if (!channel) return;
 channel.send(`**<@${member.user.id}> Welcome To __Versé Server__  ** ❤️ `)  
